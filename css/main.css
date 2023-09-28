@@ -14,12 +14,12 @@ body {
     display:flex;
     align-items:center;
     justify-content:center;
-    background: linear-gradient(to right top, var(--bg-color-1) 50%, var(--bg-color-2) 50%);
+    background: linear-gradient(to left bottom, var(--bg-color-1) 50%, var(--bg-color-2) 50%);
     -webkit-background-clip: text;
     -webkit-transition: background-position .5s;
     -moz-transition: background-position .5s;
     transition: background-position .5s;
-    background-position:left bottom;
+    background-position:right top;
     background-size: 200% 200%;
 }
 
