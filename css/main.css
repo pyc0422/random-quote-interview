@@ -1,11 +1,63 @@
-* {
+:root {
     box-sizing: border-box;
+    --bg-color-1: salmon;
+    --bg-color-2: #ffffff;
 }
 
 body {
     font-family: helvetica, sans-serif;
     font-size: 16px;
     height: 100vh;
+    background-color:#000000;
     padding: 0;
     margin: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: linear-gradient(to right top, var(--bg-color-1) 50%, var(--bg-color-2) 50%);
+    -webkit-background-clip: text;
+    -webkit-transition: background-position .5s;
+    -moz-transition: background-position .5s;
+    transition: background-position .5s;
+    background-position:left bottom;
+    background-size: 200% 200%;
+}
+
+
+#quote-wrapper {
+    height: fit-content;
+    min-height:20vh;
+    width:50vw;
+    padding: 10px;
+    border-radius:10px;
+    background-color:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+
+}
+
+#quote {
+    border-radius:10px;
+    color:#000000;
+    text-align: center;
+    padding:1rem;
+    margin-bottom:1rem;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+#generate {
+    border: none;
+    border-radius:5px;
+    background-color:#2ecc71;
+    color:#fff;
+    cursor: pointer;
+    padding: 5px 20px;
+    transition: background-color 0.3s ease;
+}
+#generate:hover{
+    background-color:#27ae60;
+
 }
